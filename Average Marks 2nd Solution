@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Assignment_Average_of_marks {
+	
+	public static void main(String[] args) {
+		
+		Scanner obj = new Scanner(System.in);
+		
+		
+		int m1,m2, m3;
+		
+		String str = obj.next();
+		char A = str.charAt(0);
+		
+		m1 = obj.nextInt();
+		m2 = obj.nextInt();
+		m3 = obj.nextInt();
+		
+		int avg = (m1 + m2 + m3)/3;
+		System.out.println(A);
+		System.out.print(avg);
+	}
+
+}
