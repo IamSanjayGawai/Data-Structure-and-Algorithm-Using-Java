@@ -35,8 +35,15 @@ public class Max_and_Min_Datatype {
 		//Printing Values
 		System.out.print(e + "     ");
 		System.out.println(f);
-		
-		
+				
 	}
 
 }
+
+Output :  
+-2147483648     2147483647
+32767     -32768
+127     -128
+1.7976931348623157E308     4.9E-324
+
+
