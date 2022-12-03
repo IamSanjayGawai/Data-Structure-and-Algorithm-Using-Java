@@ -1,0 +1,1 @@
+The String class length method returns an int, the maximum length that would be returned by the method would be Integer.MAX_VALUE, which is 2^31 - 1, which is equivalent to 2,14,74,83,647.

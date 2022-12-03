@@ -1,0 +1,11 @@
+What will be the output of the following code:
+
+String a="coding";
+for(int i=2;i<4;i++)
+{
+    System.out.print(a.substring(i));
+}
+
+Ans:dinging
+
+Note: or i=2, the substring will be ding and for i=3 , it will be ing 

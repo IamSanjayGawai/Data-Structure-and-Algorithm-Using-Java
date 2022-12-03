@@ -1,0 +1,9 @@
+What will be the Time Complexity of following code in terms of ‘n’ ?
+
+for(i= 2; i<n; i=i+1)
+{
+   for(j = 1; j < c; j++)
+        // A line of code of Θ(1)
+}
+
+Ans: O(n)

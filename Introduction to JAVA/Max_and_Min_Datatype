@@ -1,0 +1,49 @@
+
+public class Max_and_Min_Datatype {
+	public static void main(String[] args) {
+		
+		// Integer Maximum Value and Minimum value
+		int min =Integer.MIN_VALUE;
+		int max =Integer.MAX_VALUE;
+		//Printing Values
+		System.out.print(min + "     ");
+		System.out.println(max);
+		
+		
+		
+		// Short Maximum Value and Short Minimum Value
+		short a = Short.MAX_VALUE;
+		short b = Short.MIN_VALUE;
+		//Printing Values
+		System.out.print(a + "     ");
+		System.out.println(b);
+		
+		
+		
+		// Byte Maximum Value and Minimum Value
+		byte c = Byte.MAX_VALUE;
+		byte d = Byte.MIN_VALUE;
+		//Printing Values
+		System.out.print(c + "     ");
+		System.out.println(d);
+		
+		
+		
+		// Double 
+		double e = Double.MAX_VALUE;
+		double f = Double.MIN_VALUE;
+		//Printing Values
+		System.out.print(e + "     ");
+		System.out.println(f);
+				
+	}
+
+}
+
+Output :  
+-2147483648     2147483647
+32767     -32768
+127     -128
+1.7976931348623157E308     4.9E-324
+
+

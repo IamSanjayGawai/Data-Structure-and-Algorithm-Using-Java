@@ -1,0 +1,18 @@
+Output problem
+
+
+
+Send Feedback
+What will be the output of the following code:
+public static void main (String[] args) {
+String str1="abc";
+String str2="bc";
+String str3="ab"+str2;
+System.out.println(str1==str3);
+}
+
+
+Ans: false
+
+Note:  str1==str   we are checking reference addresses are equals but if string are not same then in string pool
+that will store in diff memory location thats why they are not equals

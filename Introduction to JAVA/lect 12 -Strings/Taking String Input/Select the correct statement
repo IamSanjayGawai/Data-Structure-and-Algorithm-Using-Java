@@ -1,0 +1,10 @@
+
+
+Select the correct statement.
+
+
+
+Ans: 
+1. System.in in Scanner represents input Stream.
+2. If we want to read from a file then we can pass filename instead of System.in
+4. .nextLine() reads till '\n' is encountered.

@@ -1,0 +1,14 @@
+What will be the output of the following code:
+
+
+
+public static void main (String[] args) {
+String str1="abc";
+String str2=str1+" ";
+System.out.println(str1==str2);
+}
+
+
+Ans: false
+
+Note: for explanation refer Output problem 1 note
