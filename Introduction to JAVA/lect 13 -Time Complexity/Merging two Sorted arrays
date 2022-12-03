@@ -1,0 +1,4 @@
+What is the time complexity for merging two sorted arrays?
+size of arrays are n and m.
+
+Ans: O(M + N)

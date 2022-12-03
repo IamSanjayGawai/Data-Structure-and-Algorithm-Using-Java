@@ -1,0 +1,13 @@
+Choose the correct option.
+
+A) Linear Search                     1. O(logn)
+B) Bubble sort                         2. O(n)
+C) Binary Search                    3. O(n^2)
+
+
+Ans:
+
+
+A) Linear Search                      2. O(n)
+B) Bubble sort                        3. O(n^2) 
+C) Binary Search                      1. O(logn)

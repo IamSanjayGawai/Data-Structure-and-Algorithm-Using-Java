@@ -1,0 +1,23 @@
+class Solution {
+    public static void main(String args[]) 
+    {
+        int x =10;
+        int y = 20;
+        // before executon x++ will = 10 yhats why first condtion false it is not going next , it is directly enters into else
+        // before executiom  ++y = 21 but this will not print because first (x++>10 is false)
+        
+        if(x++ > 10 && ++y > 20 ){
+        System.out.print("Inside if  ");
+        }else{
+        System.out.print("Inside else  ");
+        }
+        // after execution x will 11 but y will 20 same
+        
+        System.out.println(x +" "+y);
+     }
+}        
+
+
+
+Output: 
+Inside else 11 20

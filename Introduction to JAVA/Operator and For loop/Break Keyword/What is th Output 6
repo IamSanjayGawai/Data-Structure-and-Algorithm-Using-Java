@@ -1,0 +1,28 @@
+Which code snippet would generate an error?
+
+1.
+for(int i=1;;i++)
+    {   if(i==5)
+            break;
+        System.out.print(i);
+    }
+2.
+for(int i=1;;i++)
+    {   if(i<5)
+            System.out.print(i);
+        else 
+            break;
+    }
+3.
+for(int i=1;;i++)
+    {   if(i>5)
+        {
+            break;
+            System.out.print("break statement reached");
+        }
+        System.out.print(i);
+        
+        
+ANS: 3rd is show error
+
+Note: In code snippet 3. the statement after break is never executed hence it gives an error.

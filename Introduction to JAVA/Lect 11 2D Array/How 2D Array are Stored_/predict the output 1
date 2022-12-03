@@ -1,0 +1,19 @@
+What will be the output of the following code?
+
+
+public static void main(String[] args) 
+{ 
+
+//                     
+    int[][] arr = { { 1, 2 }, { 3, 4 } }; 
+    System.out.println(arr[0][0]+arr[1][1]); 
+} 
+
+
+
+// arr[0][0] = 1  
+// arr[1][1] = 4
+// 4+1 = 5
+
+Output: 5
+

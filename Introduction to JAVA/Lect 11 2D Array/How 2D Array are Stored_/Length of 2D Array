@@ -1,0 +1,5 @@
+Select the correct option to get number of rows in a 2-d array(arr)?
+
+
+
+Ans = arr.length

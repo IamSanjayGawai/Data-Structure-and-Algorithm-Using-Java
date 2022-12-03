@@ -1,0 +1,17 @@
+Number of operations
+
+
+Send Feedback
+What are the number of operations for the following function?
+
+
+public static void func(int n)
+{
+    int sum=0;
+    for(int i=1;i<n*n;i++)
+        sum+=i;
+    System.out.println(sum);
+}
+
+
+Ans: k1+k1(n^2)

@@ -1,0 +1,4 @@
+What should be the return type of a function that returns a 2-d array?
+
+
+Ans: int[][]

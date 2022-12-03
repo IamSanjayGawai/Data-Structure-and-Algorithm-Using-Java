@@ -1,0 +1,44 @@
+import java.util.*;
+public class Declaring_Array_2 {
+	
+	public static void main(String[] args) {
+		
+
+	
+	
+	//Datatype  Array_Name[]  = new Datatype[Size]
+		
+		//integer array
+		int[] Phone_No = new int [7]; 
+		
+		//character type array
+		char [] Gender = new char [7]; 
+		
+		//Double array
+		double[] Average = new double [7]; 
+		
+		//Flaot array
+		float[] Marks = new float [7]; 
+		
+		
+		//String Array
+		String[] Name = new String [7]; 
+		
+		Name[0] = "Sanjay Gawai";
+		Name[1] = "Sanjay";
+		Name[2] = "Sanjay";
+		Name[3] = "Sanjay";
+		Name[4] = "Sanjay";
+		Name[5] = "Sanjay";
+		Name[6] = "Sanjay";
+		
+		
+	for(int i =0; i<Name.length; i++)
+	{
+		System.out.print(Name[i]+"   ");
+		
+	}
+	
+	}
+
+}

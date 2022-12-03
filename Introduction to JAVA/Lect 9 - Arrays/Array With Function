@@ -1,0 +1,44 @@
+import java .util.Scanner;
+
+public class Array_with_Function {
+	
+	public static int[] Input_Array()
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.print("Size of the array ");
+		int n = s.nextInt();
+		// declaration of array
+		int [] arr = new int[n];
+		
+		for(int i =0; i<n; i++) {
+			System.out.print("Take elment for "+ i+" th "+"index ");
+			arr[i] = s.nextInt();
+		}
+		return arr;
+		
+		
+	}
+	
+	
+	
+	public static void Print_Array(int[] arr)
+	{
+		int n = arr.length;
+		for(int i =0; i<n; i++) {
+		
+		System.out.print(arr[i]+" ");
+		}
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		int arr[] =Input_Array();
+		Print_Array(arr);
+		
+	}
+	
+
+}

@@ -1,0 +1,19 @@
+Time complexity of a code
+Send Feedback
+What will be the Time Complexity of following code in terms of ‘n’ ?
+public static void func(int n)
+{
+    int sum=0;
+    for(int i=1;i<n;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                sum+=i;
+            }
+        }
+    System.out.println(sum);
+}
+
+
+
+Ans: O(n^2)

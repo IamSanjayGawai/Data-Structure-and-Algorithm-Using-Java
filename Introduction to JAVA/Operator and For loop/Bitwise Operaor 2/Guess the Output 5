@@ -1,0 +1,30 @@
+class Solution {
+    public static void main(String args[]) 
+    {
+         int x = 10;
+         int y = 20;
+         
+         // first condition false, and second is true thats why it enters into If loop
+         
+         // before executiony = 21
+         
+         if(x++ > 10 || ++y > 20 ){
+         // (10 > 10) || (21>20)
+         // (Flase)  ||  (True)
+         // in || (OR) Operator if thre a single condition will true then it will True
+         
+        System.out.print("Inside if  ");
+         }else{
+        System.out.print("Inside else  ");
+        
+         }
+         // before executiony = 21
+         // after execution x = 11 
+         System.out.println(x  + " " + y);
+    }
+}  
+
+
+Output:
+
+Inside if  11 21

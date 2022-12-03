@@ -1,0 +1,5 @@
+How can we access the last element in last row in a 5*5 2-D array arr?
+int arr[][]=new int[5][5];
+Row number and element count starts from 0.
+
+Ans:  Arr[4][4]

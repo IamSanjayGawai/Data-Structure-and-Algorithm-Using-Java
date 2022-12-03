@@ -1,0 +1,5 @@
+Note: Array not Stores the Values it Stores the [reference] and [Size of Array] or [length of Array]
+
+
+
+whenerver we pass reference of array and any updation will perform then main values also change (beacuase we passing reference not values)
