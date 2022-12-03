@@ -1,0 +1,24 @@
+The number of Hello printed on the screen for the following code will be:
+public static void main (String[] args) {
+    int x=5;
+    int y=5;
+    while((x=5)==y)
+    {
+        System.out.println("Hello");
+        x++;
+        y++;
+    }
+}
+
+
+
+
+Output: one
+
+
+Note:
+ if Y=5 then it will print hello but after incrementing y will become y=6 then ((x=5)==y) int this y=6 then it will terminate
+ 
+ The loop is executed only once when y=5.
+
+The condition is false when y=6.

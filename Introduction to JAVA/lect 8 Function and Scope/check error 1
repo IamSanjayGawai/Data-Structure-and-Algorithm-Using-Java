@@ -1,0 +1,18 @@
+Will the given code generate any error:
+
+
+
+public static void func1(int a)
+{
+    System.out.print("a");
+}
+public static void main (String[] args) {
+    func1(2.5);
+}
+
+
+
+Ans: Yes
+
+
+Note:  The datatype of argument in function is int whereas we have passed a double value. So the code would generate an error.

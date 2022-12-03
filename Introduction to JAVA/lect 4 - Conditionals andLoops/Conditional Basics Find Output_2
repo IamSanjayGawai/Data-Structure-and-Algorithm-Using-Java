@@ -1,0 +1,25 @@
+
+public class if_else_conditions_2 {
+	
+public static void main(String[] args) {
+	
+
+	int a=50;
+	if(a>10)
+	{
+	    System.out.print("Coding");
+	}
+	else(a>20)
+	{
+	    System.out.print("Ninjas");
+	}
+
+
+ }
+}
+
+
+Output:
+Compile time error
+
+Note: we cant use condition after else

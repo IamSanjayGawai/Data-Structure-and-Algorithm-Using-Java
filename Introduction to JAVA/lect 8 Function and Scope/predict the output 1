@@ -1,0 +1,26 @@
+What will be the output of the following code:
+
+
+public static void func2()
+{
+    System.out.print("#");
+}
+public static void func1()
+{
+    System.out.print("*");
+    func2();
+}
+public static void main (String[] args) {
+    func2();
+    func1();
+}
+
+
+Output: #*#
+
+Note:
+First we call func2, and # is printed.
+
+Then we call func1, which first prints * and then calls func2, which prints #.
+
+So the output is #*#.

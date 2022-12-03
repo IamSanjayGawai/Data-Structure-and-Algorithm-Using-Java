@@ -1,0 +1,111 @@
+Fibonacci Number
+Send Feedback
+Given a number N, figure out if it is a member of fibonacci series or not. Return true if the number is member of fibonacci series else false.
+Fibonacci Series is defined by the recurrence
+    F(n) = F(n-1) + F(n-2)
+where F(0) = 0 and F(1) = 1
+
+
+Input Format :
+Integer N
+Output Format :
+true or false
+Constraints :
+0 <= n <= 10^4
+Sample Input 1 :
+5
+Sample Output 1 :
+true
+Sample Input 2 :
+14
+Sample Output 2 :
+false    
+
+Your Code
+
+Main Code
+
+Code Pair
+
+Java (SE 1.8)
+1819202122232425262728291516171314789456310111212
+import java.util.Scanner;
+public class Solution {
+	
+
+
+	public static boolean checkMember(int n){
+		int n1 =0;
+	    int n2 =1;
+	    if(n==0)
+		{
+…
+	}
+	
+
+}
+
+
+CUSTOM INPUT
+
+
+SUBMIT SOLUTION
+
+
+PREVIOUS
+
+**********************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+public class Solution {
+	
+
+
+	public static boolean checkMember(int n){
+		int n1 =0;
+	    int n2 =1;
+	    if(n==0)
+		{
+         return true;
+		}
+	    boolean Fib = false;
+		while(n1<n)
+		{
+		  int n3 = n1+n2;
+		  n1 = n2;
+		  n2  =n3;
+
+		  if(n1==n)
+		  {
+			 Fib=true;
+
+		  }
+		
+
+		}
+		 return Fib;
+	}
+
+		public static void main (String args[])
+		{
+			Scanner s = new Scanner(System.in);
+			int no = s.nextInt();
+
+			boolean res =checkMember(no);
+			System.out.println(res);
+
+
+		
+
+	}
+	
+
+}

@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Solution {
+    
+    public static void main(String[] args) {
+        // Write your code here
+        Scanner obj =new Scanner(System.in);
+                // taking character input
+                String str = obj.nextLine();
+                char c = str.charAt(0);
+                
+                // Lowerase = 0 , Uppercase =1, not Alphabet =-1 //
+                // we uses Ascci values for Characters for lowercas(97 to 127 ) and for Uppercase (65 to 90)
+                
+                if (c>=97 && c<=127)
+                {
+                    System.out.println("0");
+                }
+                else if(c>=65 && c<=90)
+                {
+                    System.out.println("1");
+                }
+                else {
+                    System.out.println("-1");
+                }
+
+
+
+    }
+}

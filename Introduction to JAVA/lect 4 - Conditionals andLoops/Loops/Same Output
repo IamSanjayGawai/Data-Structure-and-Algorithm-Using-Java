@@ -1,0 +1,43 @@
+Same output
+Send Feedback
+Whichof the following codes gives same output:
+1
+   int i=1;
+   while(i<5)
+   {
+       System.out.print(2*i);
+       i=i+1;
+   }
+2
+   int i=2;
+   while(i<10)
+   {
+       System.out.print(i);
+       i=i+2;
+   }
+3
+   int i=2;
+   while(i<10)
+   {
+       System.out.print(i);
+       i*=2;
+   }
+4
+   int i=10;
+   while(i>0)
+   {
+       if(i%2==0)
+       {
+           System.out.print(10-i);
+       }
+       i--;
+   }
+   
+   
+   
+Answer:
+
+Code 1:   2468
+Code 2:   2468
+Code 3:   248
+Code 4:   02468

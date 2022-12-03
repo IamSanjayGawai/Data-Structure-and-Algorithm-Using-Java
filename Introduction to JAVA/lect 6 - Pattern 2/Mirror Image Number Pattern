@@ -1,0 +1,43 @@
+
+	import java.util.Scanner;
+	public class Solution {
+
+
+		public static void main(String[] args) {
+			Scanner s = new Scanner(System.in);
+
+			int n = s.nextInt();
+
+			int row = 1;
+			while(row <= n)
+			{
+			 // Creating spaces n-row (if n=4 thne i=1 (4-1=3) then three spaces will print and so o i wil increase and substract by n)
+	                   int spaces = 1;
+				  while(spaces<= n-row)
+				  {
+
+	                             System.out.print(" ");
+				     spaces = spaces+1;
+				  }
+				  
+			//  Creating col and we have to print column	  
+				  int col = 1;
+				  while(col<=row)
+				  {
+	                             System.out.print(col);
+			             col = col +1;
+
+				  }
+	                System.out.println();
+	                row = row + 1;
+
+			}
+			
+
+			
+		}
+
+	}
+
+
+

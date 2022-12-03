@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+         
+		 int row =1;
+		 while(row<=n){
+              int col =1;
+			  while(col<=row)
+			  {
+
+			 char ch = (char)('A'+row-1);
+
+                   System.out.print(ch);
+				   col = col +1;
+			  }
+                System.out.println();
+				row=row+1;
+		 }
+
+		
+	}
+
+}

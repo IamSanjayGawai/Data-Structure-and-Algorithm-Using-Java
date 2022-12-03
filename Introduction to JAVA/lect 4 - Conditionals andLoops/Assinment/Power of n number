@@ -1,0 +1,42 @@
+//*************************************Aproach-1*****************************************
+
+import java.util.Scanner;
+public class Solution{
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+	 int S = s.nextInt();
+	 int N = s.nextInt();
+  
+	 int power= 1;
+	 int i = 0;
+	 while(i<=N-1)
+	 {
+		 power = power*S;
+		
+		
+		i =i+1;
+		
+	 }
+	 System.out.println(power);
+	}
+}
+
+
+
+
+
+//**************************[Approach-2]**********************************
+
+import java.util.*;
+public class Solution {
+    
+    public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int n=sc.nextInt();
+        int Power=(int)Math.pow(x,n);
+        System.out.println(Power);
+        
+    }
+}

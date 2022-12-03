@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Solution {
+    
+		  public static void main(String[] args) {
+
+		    Scanner s = new Scanner(System.in);
+		    int number = s.nextInt();
+
+		  
+		    int i = 2;
+		    
+		   // from 2 to n-1
+		    while(i <= number-1) {
+
+		      if (number % i == 0) {
+		        System.out.print(i + " ");
+		       
+		      }
+		      // increment only in while
+		      i=i+1;
+		    }
+		  }
+		}
+

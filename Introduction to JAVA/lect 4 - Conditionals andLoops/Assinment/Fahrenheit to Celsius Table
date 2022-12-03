@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Solution {
+
+	public static void main(String[] args) 
+	{
+		Scanner obj= new Scanner(System.in);
+		  int S = obj.nextInt();
+	    int E = obj.nextInt();
+	    int W = obj.nextInt();
+	    
+	    while(S <= E) {
+	    	
+	    	//converting fahrenheit to celcius /
+
+			int C = (int)((5.0/9)*(S - 32));
+			
+            // we use "\t" to give space between //
+			System.out.println(S+"\t"+C);
+	
+			S = S + W;
+		}
+	}
+}	
+
+Input:
+0 
+100 
+20
+
+Output:
+0   -17
+20  -6
+40  4
+60  15
+80  26
+100 37

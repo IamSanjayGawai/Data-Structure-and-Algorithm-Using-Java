@@ -1,0 +1,36 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class Main {
+	
+	public static void main(String[] args) {
+		
+        Scanner s=new Scanner(System.in);
+        int basic_salary = s.nextInt();
+        //String str=s.next();
+        char Grade=s.next().charAt(0);
+        double hra=0;
+        double da=0;
+        int allow=0;
+        double pf=0;
+        double totalsalary=0;
+        
+        if(Grade=='A'){
+            allow=1700;
+        }
+        else if(Grade=='B'){
+            allow=1500;
+        }
+        else{
+            allow=1300;
+        }
+        hra=0.2*basic_salary;
+        da=0.5*basic_salary;
+        pf=(0.11*basic_salary);
+        
+        totalsalary=basic_salary+hra+da+allow-pf;
+        
+        System.out.println((int)Math.round(totalsalary));
+     
+        
+	}
+}

@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		
+	Scanner s = new Scanner(System.in);
+	int n = s.nextInt();
+	
+	int row = 1;
+	while(row<=n)
+	{
+       // Spaces
+		int spaces = 1;
+		while(spaces<=n-row)
+		{
+			System.out.print(" ");
+			spaces =spaces +1;
+		}
+       // increasing number
+		int  num =1;
+		while(num<=row)
+		{
+
+			System.out.print("*");
+			num =num+1;
+		}
+
+		// increasing number
+		int dec = row-1;
+		while(dec>=1)
+		{
+			System.out.print("*");
+			dec = dec - 1;
+		}
+		System.out.println();
+		row =row+1;
+	}
+
+		
+	}
+
+}
