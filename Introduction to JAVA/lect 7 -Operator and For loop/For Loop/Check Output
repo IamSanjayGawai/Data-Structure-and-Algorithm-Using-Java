@@ -1,0 +1,10 @@
+How many times will the following loop run?
+
+
+for(int i=1;i<10;i*=2)
+{
+     System.out.println(i);
+} 
+
+
+Output: 4
