@@ -1,0 +1,6 @@
+Which of the following method can be used to create an object of student class?
+
+
+
+Ans:
+Student s1 = new Student();
