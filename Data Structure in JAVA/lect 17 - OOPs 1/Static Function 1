@@ -1,0 +1,26 @@
+What would be the output of the following code?
+
+class Test 
+{ 
+    static int a = 10; 
+    static int b; 
+    static void fun(){ 
+        b = a * 4; 
+    } 
+} 
+class MCQ{
+   public static void main(String[] args) 
+    { 
+      Test t=new Test();
+      t.fun();
+      System.out.print(Test.a+Test.b);
+    } 
+} 
+
+Ans:
+50
+
+
+Solution Description
+When t.fun() is called . a=10 and using this b=40.
+We print a+b=50.
