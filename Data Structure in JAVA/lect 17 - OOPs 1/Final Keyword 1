@@ -1,0 +1,7 @@
+Select the correct statement(s) about final keyword?
+
+Ans:  
+
+1 Final variable can be initialized only once and cannot be modified further.
+2 We can initialize final variable inside constructor.
+3 Final keyword is a non-access modifier.
