@@ -1,0 +1,32 @@
+What will be the output of the following code?
+class Ninja 
+{ 
+    Ninja(String name) 
+    { 
+        System.out.println("Constructor one " + name); 
+    } 
+    Ninja(String name, int age) 
+    { 
+        System.out.println("Constructor two " + name + " "+ age); 
+    } 
+    Ninja(long id) 
+    { 
+        System.out.println("Constructor three " + id); 
+    } 
+} 
+
+class Student 
+{ 
+    public static void main(String[] args) 
+    {  
+        Ninja geek3 = new Ninja("Dharmesh", 26); 
+    } 
+} 
+
+
+
+
+Ans:
+Costroctor Two Dharmesh  26
+
+Note:The constructor with two arguments string and integer is called.
