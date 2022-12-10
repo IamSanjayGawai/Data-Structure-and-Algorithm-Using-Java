@@ -1,0 +1,23 @@
+What will be the output of the following code?
+
+
+class Pen{
+    final int price = 15;
+}
+
+public class MCQs {
+    public static void main(String[] args) {
+        Pen p = new Pen();
+        p.price = 20;
+        System.out.println(p.price);
+    }   
+}  
+
+
+
+Ans:  Error
+
+
+
+Solution Description
+Since the variable price is final so we cannot update its value.
