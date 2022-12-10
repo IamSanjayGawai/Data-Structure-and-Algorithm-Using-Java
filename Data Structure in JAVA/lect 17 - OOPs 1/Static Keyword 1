@@ -1,0 +1,22 @@
+What will be the output of the following code?
+
+class Car{
+    static int year;
+    String company_name;
+}
+class new_Car {
+    public static void main (String[] args) {
+        Car c=new Car();        
+        Car.year=2018;              
+        c.company_name="KIA";
+        Car d=new Car();
+        System.out.print(d.year);
+    }
+}
+
+Ans: 2018
+
+
+Solution Description:
+Year is of static type i.e. only one memory block of year is created , same for every object.
+So, it would print 2018.
