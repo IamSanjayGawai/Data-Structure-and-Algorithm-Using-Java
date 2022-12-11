@@ -1,0 +1,11 @@
+Merge sort
+Send Feedback
+
+
+What is the time complexity of merge sort :
+
+Ans: O(nlogn)
+
+Solution Description
+The time complexity of the Merge Sort is θ(nLogn) in all 3 cases (worst, average, and best) as the merge sort always divides the array into two halves
+and takes linear time to merge two halves.
