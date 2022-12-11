@@ -1,0 +1,6 @@
+Fibonacci
+
+Send Feedback
+The space complexity for finding nth fibonacci number using recursion is :
+
+Ans:O(n)
