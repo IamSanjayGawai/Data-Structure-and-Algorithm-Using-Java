@@ -1,0 +1,12 @@
+Que-1. The height of a tree is the length of the longest root-to-leaf path in it. The maximum and the minimum number of nodes in a binary tree of height 5 are: 
+
+(A) 63 and 6, respectively 
+(B) 64 and 5, respectively 
+(C) 32 and 6, respectively 
+(D) 31 and 5, respectively 
+
+
+
+Solution: According to formula discussed, 
+max number of nodes = 2^(h+1)-1 = 2^6-1 =63. 
+min number of nodes = h+1 = 5+1 = 6. 
