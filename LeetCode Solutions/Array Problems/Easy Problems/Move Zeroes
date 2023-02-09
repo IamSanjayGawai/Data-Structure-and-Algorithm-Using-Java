@@ -30,24 +30,30 @@ Follow up: Could you minimize the total number of operations done?
 
 class Solution {
     public void moveZeroes(int[] nums) {
-        int j =0; // pointer
-        int n = nums.length;
-        
-        for(int i =0; i<n; i++)
-        {
-            if(nums[i]!=0)
-            {
-                nums[j]=nums[i];
-                j++; // increment till how much non zeros elements e found
-            }
-            
-        }
-        for(; j<n; j++)
-        {
-            // till length by defualt zero
-            nums[j]=0;
-        }
-        
+       // first find non -zeros elements from nums[i] 
+       // store it into muns[j] and j++
+       // and finally store 0 in nums[j]
+
+       
+    int j = 0;
+    
+
+    // first find non -zeros elements from nums[i]
+      for(int i=0; i<nums.length; i++)
+      {
+          if(nums[i]!=0)
+          {
+                   // store it into muns[j] and j++
+               nums[j]=nums[i];
+               j++;
+
+          }
+      }
+       for(; j<nums.length; j++)
+       {
+            // and finally store 0 in nums[j]
+           nums[j]=0;
+       }
     }
 }
 ********************************************************************************************************
