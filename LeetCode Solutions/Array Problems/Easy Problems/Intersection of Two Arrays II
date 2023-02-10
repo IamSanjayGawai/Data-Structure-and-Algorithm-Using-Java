@@ -47,6 +47,8 @@ class Solution {
             for (int j = 0; j < nums2.length; j++) {
                 if (nums1[i] == nums2[j]) {
                     list.add(nums1[i]);
+
+   //set nums2[j] to Integer.MIN_VALUE to mark it as visited, and break out of the inner loop.                 
                     nums2[j] = Integer.MIN_VALUE;
                     break;
                 }
@@ -60,3 +62,27 @@ class Solution {
         return result;
     }
 }
+
+***********************************************************************************************************
+DRY RUN : 
+
+nums1 = [4, 9, 5, 5, 5]
+nums2 = [9, 4, 9, 8, 4, 5]
+
+First, we create an empty list list to store the common elements between the two arrays.
+
+We loop through nums1 array and for each element nums1[i], we loop through nums2 array.
+
+Inside the inner loop, we compare nums1[i] with nums2[j]. If they are equal, we add nums1[i] to the list. We then set nums2[j] to Integer.MIN_VALUE to mark it as visited, and break out of the inner loop.
+
+We repeat steps 2 and 3 until we have processed all elements in nums1 array.
+
+After the above steps, list will contain all the common elements between nums1 and nums2.
+
+Next, we create an integer array result of size equal to the number of elements in list.
+
+We then copy the elements from list to result array.
+
+Finally, we return the result array.
+
+So for the example given above, the result array will be [4, 9, 5, 5, 5], which are the common elements between nums1 and nums2.
