@@ -35,7 +35,7 @@ Could you do it in-place with O(1) extra space?
 
 
 
-1)BruteForce Approach
+1)BruteForce Approach           lime limit exceed use 2nd Solution
 **************************************************************************************************************
 class Solution {
     public void rotate(int[] nums, int k) {
