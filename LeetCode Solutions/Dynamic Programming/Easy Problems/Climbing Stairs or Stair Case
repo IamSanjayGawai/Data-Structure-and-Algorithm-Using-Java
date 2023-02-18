@@ -1,0 +1,78 @@
+You are climbing a staircase. It takes n steps to reach the top.
+
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+ 
+
+Example 1:
+
+Input: n = 2
+Output: 2
+Explanation: There are two ways to climb to the top.
+1. 1 step + 1 step
+2. 2 steps
+Example 2:
+
+Input: n = 3
+Output: 3
+Explanation: There are three ways to climb to the top.
+1. 1 step + 1 step + 1 step
+2. 1 step + 2 steps
+3. 2 steps + 1 step
+ 
+
+Constraints:
+
+1 <= n <= 45
+
+
+********************************************************************************************
+
+
+1) Solution
+***********************************************************************************************
+
+class Solution {
+    int[] memo;
+    public int climbStairs(int n) {
+        memo = new int[n+1];
+        for(int i =0;i<=n;i++) memo[i] = -1;
+        return climbStairsRec(n);
+    }
+    
+    public int climbStairsRec(int n){
+        if(memo[n]==-1){
+            int r;
+            if(n==0 || n==1 || n==2) r = n;
+            else{
+                r = climbStairsRec(n-1) + climbStairsRec(n-2);
+            }
+            memo[n] = r;
+        }
+        return memo[n];
+    }
+}
+
+************************************************************
+
+
+2)Solution 
+*********************************************************
+
+
+class Solution {
+    private int[] arr = new int[46];
+    public int climbStairs(int n) {
+        if(n <= 3) {
+            return n;
+        }
+        int count = 0;
+        if(arr[n] > 0) {
+            count = arr[n];
+        } else {
+            count = climbStairs(n-1)+climbStairs(n-2);
+            arr[n] = count;
+        }
+        return count;
+    }
+}
