@@ -27,18 +27,26 @@ Constraints:
 
 1)Soution Bruteforce
 ************************************************************************************************
+Approach
+First Sort the Array.
+Then Compare elements one by one.
+We Only have to return a boolean value.
+Complexity
+Time complexity: O(nlog(n))
+Space complexity: O(1)
+
+
+
+Code
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-
-        Arrays.sort(nums);
-
-      for(int i =0; i<nums.length-1; i++)
-      {
-         if(nums[i]==nums[i+1])
-         return true;
-      }
-     return false;
-        
+        Arrays.sort(nums); 
+        for (int i = 0; i < nums.length - 1; i++) {
+                if (nums[i] == nums[i+1]) {
+                    return true;
+                }
+        }
+        return false;
     }
 }
 
@@ -46,10 +54,61 @@ class Solution {
 
 
 
+2) Solution                     Hashmap
+**************************************************************************************************
+Approach
+First Sort the Array.
+Then Compare elements one by one.
+We Only have to return a boolean value.
+Complexity
+Time complexity: O(nlog(n))
+Space complexity: O(1)
+
+
+
+Code
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        Arrays.sort(nums); 
+        for (int i = 0; i < nums.length - 1; i++) {
+                if (nums[i] == nums[i+1]) {
+                    return true;
+                }
+        }
+        return false;
+    }
+}
+
+
+
+******************************************************************************************
 
 
 
 
+3)Solution Hashset
+******************************************************************************************
+
+omplexity using a HashSet
+Time complexity: O(n)
+Space complexity: O(n)
+
+
+
+
+Code
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        HashSet<Integer> set = new HashSet<>();
+        for (int i = 0; i < nums.length; i++) {
+                if (set.contains(nums[i])) {
+                    return true;
+                }
+                set.add(nums[i]);
+        }
+        return false;
+    }
+}
 
 
 
