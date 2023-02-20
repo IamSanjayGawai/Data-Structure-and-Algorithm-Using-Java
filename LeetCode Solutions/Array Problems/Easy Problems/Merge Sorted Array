@@ -40,11 +40,29 @@ Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 
 
 
-
-
-
-
 1)Solution Bruteforce
+************************************************************************************************************************
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+
+     int i=0;
+
+    while(m<nums1.length) {
+        nums1[m] = nums2[i];
+        m++;
+        i++;
+    }
+    
+    Arrays.sort(nums1);
+       }
+}
+
+
+
+
+
+
+2)Solution Bruteforce
 **************************************************************************************************************************
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
