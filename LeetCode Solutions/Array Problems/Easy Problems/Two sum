@@ -35,8 +35,38 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 
 
 
-
 1) Brutforce Solution 
+************************************************************************************************************************************************************
+import java.util.HashMap;
+import java.util.Map;
+ 
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+
+      int arr[]= new int[2]; 
+              
+      for(int i=0; i<nums.length-1; i++)
+      { 
+          if(nums[i]+nums[i+1]==target)
+          {
+           arr[0]=i;
+           arr[1]=i+1;
+          }
+      }
+      return arr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+2) Brutforce Solution 
 ************************************************************************************************************************************************************
 
 
@@ -65,9 +95,7 @@ class Solution {
 
 
 
-
-
-2) Optimized Solution
+3) Optimized Solution
 ************************************************************************************************************************************************
 
 
@@ -98,7 +126,7 @@ class Solution {
 
 
 
-2)optimise and simple to understand
+4)optimise and simple to understand
 ******************************************************************************************
 
 import java.util.HashMap;
@@ -137,7 +165,7 @@ class Solution {
 
 
 
-3)Using Two Pointer Approche
+5)Using Two Pointer Approche
 *********************************************************************
 class Solution {
     public int[] twoSum(int[] nums, int target) {
