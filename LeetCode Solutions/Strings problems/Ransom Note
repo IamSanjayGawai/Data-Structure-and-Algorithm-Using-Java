@@ -1,0 +1,77 @@
+Given two strings ransomNote and magazine, return true if ransomNote can be constructed by using the letters from magazine and false otherwise.
+
+Each letter in magazine can only be used once in ransomNote.
+
+ 
+
+Example 1:
+
+Input: ransomNote = "a", magazine = "b"
+Output: false
+Example 2:
+
+Input: ransomNote = "aa", magazine = "ab"
+Output: false
+Example 3:
+
+Input: ransomNote = "aa", magazine = "aab"
+Output: true
+ 
+
+Constraints:
+
+1 <= ransomNote.length, magazine.length <= 105
+ransomNote and magazine consist of lowercase English letters.
+
+
+
+
+1)Solution  using Hashmap
+***********************************************************************
+
+public boolean canConstruct(String ransomNote, String magazine) {
+        HashMap<Character, Integer> hm = new HashMap<>();
+        for (char i : magazine.toCharArray()) {
+            if (hm.containsKey(i)) {
+                hm.put(i, hm.get(i) + 1);
+            } else {
+                hm.put(i, 1);
+            }
+        }
+        for (char i : ransomNote.toCharArray()) {
+            if (!hm.containsKey(i) || hm.get(i) == 0) {
+                return false;
+            } else {
+                hm.put(i, hm.get(i) - 1);
+            }
+        }
+        return true;
+    }
+    
+    
+    
+    
+    *****************************************************************************************
+    
+    
+    2)Solution using Array
+    **************************************************************************************
+    
+    class Solution {
+   public boolean canConstruct(String ransomNote, String magazine) {
+        int a[] = new int[26]; // find occurence of each character in string magazine
+        for (char i : magazine.toCharArray()) {
+            a[i - 'a']++;
+        }
+        for (char i : ransomNote.toCharArray()) {
+            if (a[i - 'a'] == 0) { // character is not found in magazine or a particular character doesn't have same or greater count than count in magazine
+                return false;
+            } else {
+                a[i - 'a']--; // decrement if character exists
+            }
+        }
+        return true;
+    }
+}
+    
+    
